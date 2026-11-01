@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: ramani-site:latest
+    container_name: ramani-site
+    restart: unless-stopped
+    ports:
+      - "8080:80"
